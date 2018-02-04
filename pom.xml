@@ -4,7 +4,7 @@
 
     <groupId>com.app.githeroku</groupId>
     <artifactId>GitHeroku</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>war</packaging>
 
     <name>GitHeroku</name>
@@ -68,15 +68,7 @@
                             </artifactItems>
                         </configuration>
                     </execution>
-                </executions>
-            </plugin>
-			
-			<plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-dependency-plugin</artifactId>
-            <version>3.0.2</version>
-            <executions>
-                <execution>
+					<execution>
                     <phase>package</phase>
                     <goals><goal>copy</goal></goals>
                     <configuration>
@@ -90,8 +82,8 @@
                         </artifactItems>
                     </configuration>
                 </execution>
-            </executions>
-        </plugin>
+                </executions>
+            </plugin>
 			
         </plugins>
     </build>
